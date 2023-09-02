@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            height: 500px;
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: aquamarine;
+            font-size: 2em;
+            padding: 10px;
+        }
+        h1{
+            font-size: 1.2em;
+        }
+
+        .count-box{
+            height: 300px;
+            width:400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color:yellow; */
+            border: solid 2px;
+            border-color: black;
+            color: red;
+            /* padding: 10px; */
+        }
+
+        .inc,.dec{
+            
+            background-color: blueviolet;
+            height: 50px;
+            width: 50px;
+            color: black;
+            font-size: 1.2em;
+            /* display:flex ; */
+            /* flex-direction: row; */
+            /* justify-content:left ; */
+
+        }
+
+        .count{
+            font-size: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <script src="./counter_js.js"></script>
+    <div class="container">
+        <h1>Counter</h1>
+        <div class="count-box">
+            <p class="count"> 0 </p>
+        </div>
+        <div class="controls">
+        <button class="inc" onclick="handler(1)"> + </button>
+        <button class="dec" onclick="handler(-1)"> - </button>
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
